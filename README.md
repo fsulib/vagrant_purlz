@@ -1,12 +1,12 @@
 # vagrant_purlz
 This is a Vagrant VM for testing PURLZ v1.6.4 (latest release).
 
-## Configuration
-Operating System: Ubuntu 14.04 LTS "Trusty Tahr"
-Java Version: OpenJDK 6 
-Configuration File: /vagrant/demo.config
-Installer File: /vagrant/PURLZ-Server-1.6.4.jar
-Installation Directory: /root/PURLZ-Server-1.6.4
+## Configuration  
+- **Operating System:** Ubuntu 14.04 LTS "Trusty Tahr"  
+- **Java Version:** OpenJDK 6   
+- **Configuration File:** /vagrant/demo.config  
+- **Installer File:** /vagrant/PURLZ-Server-1.6.4.jar  
+- **Installation Directory:** /root/PURLZ-Server-1.6.4  
 
 An older version of Ubuntu was chosen in order to gain access to an older version of Java, as Java 8+ deprecates the 
 ["Endorsed Standards Override Mechanism"](http://docs.oracle.com/javase/8/docs/technotes/guides/standards/) (`java.endorsed.dirs`)
