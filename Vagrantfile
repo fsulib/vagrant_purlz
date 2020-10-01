@@ -13,4 +13,9 @@ Vagrant.configure("2") do |config|
       v.customize ["modifyvm", :id, "--memory", 2048]
     end
   end
+  config.trigger.after :up do |trigger|
+    trigger.name = "Restart PURLZ server"
+    trigger.info = "Restarting PURLZ server"
+    trigger.run_remote = {inline: "screen -S purlz -D -m /root/PURLZ-Server-1.6.4/bin/start.sh"}
+  end
 end
